@@ -6,12 +6,18 @@ set target=%2
 echo Creating Folder...
 md %target%
 
-call:WriteFile %seed%\%seed%.html %target%\%target%.html
-call:WriteFile %seed%\%seed%.less %target%\%target%.less
-call:WriteFile %seed%\demo.html %target%\demo.html
-call:WriteFile %seed%\index.html %target%\index.html
-call:WriteFile %seed%\readme.md %target%\readme.md
-call:WriteFile %seed%\bower.json %target%\bower.json
+for %%i in (%seed%\*.*) do (
+	set "filename=%%~ni"
+	set ex=%%~xi
+	echo %%~ni
+	echo %seed%
+
+    if %seed%==%%~ni (
+        call:WriteFile %seed%\%%~ni%%~xi %target%\%target%%%~xi
+    ) else (
+        call:WriteFile %seed%\%%~ni%%~xi %target%\%%~ni%%~xi
+    )
+)
 
 
 GOTO:EOF

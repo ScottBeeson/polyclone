@@ -15,14 +15,7 @@ Using Polyclone
 
 What it does
 -------
-The batch file simply creates a new folder with the name you enter.  It then scans the following files, line-by-line, rewriting them to the new folder after having replaced any instance of ${NAME} with the name you specified.
-
- - &lt;element name&gt;.html
- - &lt;element name&gt;.css
- - demo.html
- - index.html
- - readme.md
- - bower.json
+The batch file simply creates a new folder with the name you enter.  It then scans all the files and writes them line by line to the target folder, replacing any instance of ${NAME} with the target name.  It also checks for filenames that match the seed and renames them appropriately.  For instance, /seed/seed.html will be written to /target/target.html.  All other files will retain their name.
 
 
 Notes

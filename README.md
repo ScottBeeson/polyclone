@@ -19,25 +19,24 @@ The batch file simply creates a new folder with the name you enter.  It then sca
 
 Here is an example of what will happen:
 
-
 ####File System
 ######template
-template/
-template/template.html
-template/readme.txt
-template/hellowo.rld
+template/<br>
+template/template.html<br>
+template/readme.txt<br>
+template/hellowo.rld<br>
 
 ######target
-target/
-target/target.html
-target/readme.txt
-target/hellowo.rld
+target/<br>
+target/target.html<br>
+target/readme.txt<br>
+target/hellowo.rld<br>
  
  
+####File Contents
+`<div>This is the ${NAME} demo</div>`
 
-<div>This is the ${NAME} demo</div>
-
-<div>This is the target demo</div>
+`<div>This is the target demo</div>`
 
 Notes
 -------

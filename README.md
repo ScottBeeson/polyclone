@@ -21,13 +21,13 @@ Here is an example of what will happen:
 
 ####File System
 ######template
-template/<br>
+> template/<br>
 template/template.html<br>
 template/readme.txt<br>
 template/hellowo.rld<br>
 
 ######target
-target/<br>
+> target/<br>
 target/target.html<br>
 target/readme.txt<br>
 target/hellowo.rld<br>

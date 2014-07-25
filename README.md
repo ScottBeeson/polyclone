@@ -9,7 +9,7 @@ Using Polyclone
 1. Create a template folder.
 2. Add any files you want in the template.  Note that any filenames (excluding extension) with the same name as the template will be renamed to the target name.  See "What it does" below for more information.
 3. Add instances of ${NAME} that you want replaced when applying a new template.
-4. Download polclone.bat and place it in the same folder as your template.  This is also where any new folders will be created.
+4. Download polyclone.bat and place it in the same folder as your template.  This is also where any new folders will be created.
 5. Simply run "polyclone" from a command line.  You will be prompted for the template and target names.
 
 

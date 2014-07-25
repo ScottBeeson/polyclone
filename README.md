@@ -17,8 +17,8 @@ What it does
 -------
 The batch file simply creates a new folder with the name you enter.  It then scans the following files, line-by-line, rewriting them to the new folder after having replaced any instance of ${NAME} with the name you specified.
 
- - <element name>.html
- - <element name>.css
+ - &lt;element name&gt;.html
+ - &lt;element name&gt;.css
  - demo.html
  - index.html
  - readme.md

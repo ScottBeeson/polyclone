@@ -6,7 +6,7 @@ Simple bat file to clone a polymer seed element, supports replacing appropriate 
 Using Polyclone
 -------
 
-1. Download the core-seed element from (here)[http://www.polymer-project.org/docs/start/reusableelements.html].  If you would like, you can also create your own.
+1. Download the core-seed element from [here](http://www.polymer-project.org/docs/start/reusableelements.html).  If you would like, you can also create your own.
 2. Find all references to the element name and replace them with ${NAME} (This can be customized easily in the bat file)
 3. Make sure the seed element folder name matches the html file name.  If you downloaded the official polymer seed, you will need to rename the folder to remove the "-master".
 4. Download the bat file in the repository to the same place you put the seed element folder.  This will also be where you want to store the new elements you create.

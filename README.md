@@ -10,7 +10,7 @@ Using Polyclone
 2. Find all references to the element name and replace them with ${NAME} (This can be customized easily in the bat file)
 3. Make sure the seed element folder name matches the html file name.  If you downloaded the official polymer seed, you will need to rename the folder to remove the "-master".
 4. Download the bat file in the repository to the same place you put the seed element folder.  This will also be where you want to store the new elements you create.
-5. Simply run "polyclone &lt;new element name&gt;" from a command line.
+5. Simply run "polyclone &lt;seed folder&gt; &lt;new element name&gt;" from a command line.
 
 
 What it does

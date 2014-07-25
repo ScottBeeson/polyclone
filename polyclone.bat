@@ -1,7 +1,7 @@
 
 @echo off &setlocal
-set seed=%1
-set target=%2
+set /p seed= Enter Template Folder:
+set /p target= Enter New Name
 @echo Creating new element named "%target%"
 echo Creating Folder...
 md %target%
@@ -9,8 +9,6 @@ md %target%
 for %%i in (%seed%\*.*) do (
 	set "filename=%%~ni"
 	set ex=%%~xi
-	echo %%~ni
-	echo %seed%
 
     if %seed%==%%~ni (
         call:WriteFile %seed%\%%~ni%%~xi %target%\%target%%%~xi

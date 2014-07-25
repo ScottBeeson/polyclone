@@ -6,17 +6,38 @@ Simple bat file to clone a polymer seed element, supports replacing appropriate 
 Using Polyclone
 -------
 
-1. Download the core-seed element from [here](http://www.polymer-project.org/docs/start/reusableelements.html).  If you would like, you can also create your own.
-2. Find all references to the element name and replace them with ${NAME} (This can be customized easily in the bat file)
-3. Make sure the seed element folder name matches the html file name.  If you downloaded the official polymer seed, you will need to rename the folder to remove the "-master".
-4. Download the bat file in the repository to the same place you put the seed element folder.  This will also be where you want to store the new elements you create.
-5. Simply run "polyclone &lt;seed folder&gt; &lt;new element name&gt;" from a command line.
+1. Create a template folder.
+2. Add any files you want in the template.  Note that any filenames (excluding extension) with the same name as the template will be renamed to the target name.  See "What it does" below for more information.
+3. Add instances of ${NAME} that you want replaced when applying a new template.
+4. Download polclone.bat and place it in the same folder as your template.  This is also where any new folders will be created.
+5. Simply run "polyclone" from a command line.  You will be prompted for the template and target names.
 
 
 What it does
 -------
 The batch file simply creates a new folder with the name you enter.  It then scans all the files and writes them line by line to the target folder, replacing any instance of ${NAME} with the target name.  It also checks for filenames that match the seed and renames them appropriately.  For instance, /seed/seed.html will be written to /target/target.html.  All other files will retain their name.
 
+Here is an example of what will happen:
+
+
+
+*template*
+/template/
+/template/template.html
+/template/readme.txt
+/template/hellowo.rld
+
+*target*
+/target/
+/target/target.html
+/target/readme.txt
+/target/hellowo.rld
+ 
+ 
+
+<div>This is the ${NAME} demo</div>
+
+<div>This is the target demo</div>
 
 Notes
 -------

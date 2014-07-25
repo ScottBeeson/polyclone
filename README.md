@@ -20,8 +20,7 @@ The batch file simply creates a new folder with the name you enter.  It then sca
 
 Notes
 -------
- - If you don't use the standard seed element, it is very easy to modify which files are processed.
- - 
+ - Subfolders are currently ignored.  This will be changed.
  
 
 Planned Changes

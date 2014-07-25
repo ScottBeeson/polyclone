@@ -1,7 +1,7 @@
 
 @echo off &setlocal
-set seed=seed-element
-set target=%1
+set seed=%1
+set target=%2
 @echo Creating new element named "%target%"
 echo Creating Folder...
 md %target%

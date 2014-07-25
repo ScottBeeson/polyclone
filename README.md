@@ -29,3 +29,4 @@ Planned Changes
 
  - Eventually this will process files in a completely dynamic way (and thus not polymer specific) so that it basically copies anything in the specified template folder.
  - Support for an XML or other map file that allows you to define more variables than ${NAME} and their replacement values.
+ - Port to js and node for cross-platform support and ease of use.

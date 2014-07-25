@@ -20,18 +20,18 @@ The batch file simply creates a new folder with the name you enter.  It then sca
 Here is an example of what will happen:
 
 
+####File System
+######template
+template/
+template/template.html
+template/readme.txt
+template/hellowo.rld
 
-*template*
-/template/
-/template/template.html
-/template/readme.txt
-/template/hellowo.rld
-
-*target*
-/target/
-/target/target.html
-/target/readme.txt
-/target/hellowo.rld
+######target
+target/
+target/target.html
+target/readme.txt
+target/hellowo.rld
  
  
 

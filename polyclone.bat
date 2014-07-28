@@ -28,7 +28,7 @@ set "textfile=%~1"
 set "newfile=%~2"
 
 
-(for /f "delims=" %%i in ('findstr /n "^" "%textfile%"') do (
+(for /f "delims=" %%i in ('findstr "^" "%textfile%"') do (
     set "line=%%i"
     setlocal enabledelayedexpansion
     set "line=!line:%search%=%replace%!"

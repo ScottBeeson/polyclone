@@ -1,7 +1,7 @@
 
 @echo off &setlocal
-set /p seed= Enter Template Folder:
-set /p target= Enter New Name
+set /p seed= Enter Template Folder: 
+set /p target= Enter New Name: 
 @echo Creating new element named "%target%"
 echo Creating Folder...
 md %target%

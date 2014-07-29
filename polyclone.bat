@@ -1,8 +1,8 @@
 
 @echo off &setlocal
-set /p template= Enter Template Folder:
-set /p newname= Enter New Name:
-set /p description= Enter Description:
+set /p "template= Enter Template Folder: "
+set /p "newname= Enter New Name: "
+set /p "description= Enter Description: "
 echo Creating new element named "%newname%"
 md %newname%
 
